@@ -3,10 +3,9 @@ $(document).ready(function() {
 });
 
 function init(){
-	//retrieve message after the page is loaded and setInterval to retrieve any new 
+	//retrieve message after the page is loaded and setInterval to retrieve any new message each x seconds
 	retrieveMessages()
-	setInterval(retrieveMessages,10000);
-	
+	setInterval(retrieveMessages,10000);	
 };
 
 function retrieveMessages(){
