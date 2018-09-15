@@ -1,5 +1,3 @@
-// liskwall by korben3 - sept-2018
-
 $(document).ready(function() {
   init();
 });
