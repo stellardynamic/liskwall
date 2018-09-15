@@ -1,0 +1,27 @@
+body{
+  background: #FF5733;font-size:100%;font-family:'Open-Sans',sans-serif; font-weight:bold; margin: 0px; 
+  overflow-x: hidden; position: relative;
+  }
+
+.title{
+	margin: 10px auto;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}	
+  
+.description{
+	margin: 16px auto;
+	text-align: center;
+}	
+  
+.chatField{
+	height: 355px;
+	width: 500px;
+	background: #FF8564;
+    margin: 50px auto;
+    border: 3px solid #FFFFFF;
+    padding: 10px;
+	box-shadow: 0 0 15px white;
+}
