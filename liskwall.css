@@ -12,16 +12,22 @@ body{
 }	
   
 .description{
-	margin: 16px auto;
+	margin: 5px auto;
 	text-align: center;
 }	
   
 .chatField{
-	height: 355px;
+	height: 645px;
 	width: 500px;
-	background: #FF8564;
-	margin: 50px auto;
-	border: 3px solid #FFFFFF;
-	padding: 10px;
+	background: #FFB897;
+    margin: 20px auto;
+    border: 3px solid #FFFFFF;
+    padding: 10px;
 	box-shadow: 0 0 15px white;
+	font-size: 15px;
+}
+
+sup{
+	font-weight: normal;
+	color: #555555;
 }
