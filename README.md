@@ -1,7 +1,7 @@
 # liskwall
 Send short messages to the liskwall using the new reference/data field.
 
-Libs used: Lisk Elements (get at lisk.io/documentation/lisk-elements/setup), jquery (get at jquery.com)
+Libs used: Lisk Elements , jquery
 
 languages: html, css, javascript
 
