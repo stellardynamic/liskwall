@@ -1,4 +1,4 @@
-// liskwall by korben3 - sept-2018 - V0.2
+// liskwall by korben3 - sept-2018 - V0.3
 
 $(document).ready(function() {
   init();
@@ -35,13 +35,16 @@ function retrieveMessages(){
 				//console.log(output);
 				for (var i = 11; i >= 0; i--) {
 					var postMessage=output.data[i].asset.data;
-						postMessage=postMessage.replace(/>/g, "&gt;").replace(/</g, "&lt;"); // /\)\(/g
-						postMessage=postMessage.replace(/\:\)/g, "🙂").replace(/\:\(/g, "☹️"); //allow emoticons
-					 timestamp=output.data[i].timestamp;
-					var postDate=convertTimestamp(timestamp);
-					var postAddress=output.data[i].senderId;
+					if(postMessage){
+						postMessage=postMessage.replace(/>/g, "&gt;").replace(/</g, "&lt;");
+						postMessage=postMessage.replace(/\:\)/g, "🙂").replace(/\:\(/g, "☹️"); //allow emoticons :),:(
+						postMessage=postMessage.replace(/\+1/g, "👍").replace(/\-1/g, "👎"); //allow emoticons +1,-1
+						timestamp=output.data[i].timestamp;
+						var postDate=convertTimestamp(timestamp);
+						var postAddress=output.data[i].senderId;
 						
 						$("#messages").append("<p><sup>"+postDate+" - "+postAddress+"</sup><br/>"+postMessage+"</p>");
+					}
 				}
 			}
 		}
