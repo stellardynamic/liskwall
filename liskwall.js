@@ -26,7 +26,7 @@ function retrieveMessages(){
 	const testnetClient=lisk.APIClient.createTestnetAPIClient();
 	//$("#messages").html("");
 
-	testnetClient.transactions.get({recipientId:'7134531444980378449L', limit:12, offset:0, sort: 'timestamp:desc' })
+	testnetClient.transactions.get({recipientId:'7134531444980378449L', limit:12, offset:0, sort: 'timestamp:asc' })
 		.then(output => { 
 		
 			//only clear field and display messages when new messages are available
